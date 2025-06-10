@@ -9,11 +9,13 @@
   --button-bg-hover: #d0d2ff;
   --button-bg-focus: #dfe0ff;
   --button-bg-active: #9a9fff;
+
+  overflow-y: scroll;
 }
 
 body {
   min-height: 100%;
-  padding: 4rem;
+  padding: 4rem 2rem;
   background-color: var(--body-bg);
   color: var(--body-color);
 }
@@ -64,5 +66,17 @@ p {
     --button-bg-hover: #433744;
     --button-bg-focus: #3f233a;
     --button-bg-active: #6a0174;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 8rem;
   }
 }
